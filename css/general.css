@@ -1,9 +1,64 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+/***********************************  VARIABLER  ***********************************/
+
+html {
+  --font_display: "Grandstander", sans-serif;
+  --font_body: "Lato", sans-serif;
+
+  --gap_s: 1rem;
+  --gap_m: 2rem;
+  --gap_l: 4rem;
+
+  --radius: 15px;
+
+  --black: #1b1b1b;
+  --white: #ffffff;
+  --green_1: #e9f1df;
+  --green_2: #b8d593;
+  --green_3: #688840;
+  --green_4: #254900;
 }
 
+/***********************************  RESET  ***********************************/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/***********************************  TEXT  ***********************************/
+h1 {
+  font-family: var(--font_display);
+  font-size: 2.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+h2 {
+  font-family: var(--font_body);
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
+h3 {
+  font-family: var(--font_body);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--black);
+}
+p {
+  font-family: var(--font_body);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
+/***********************************  IMAGES  ***********************************/
+
+/***********************************  LINKS + BUTTONS  ***********************************/
+
+/***********************************  HEADER  ***********************************/
 header {
   display: flex;
   justify-content: space-between;
@@ -106,5 +161,25 @@ nav {
 
   nav.active .menu a {
     font-size: 24px;
+  }
+}
+
+/***********************************  FOOTER  ***********************************/
+
+/******************************************************************************************************************************/
+/**********************************************************  DESKTOP  *********************************************************/
+@media (min-width: 800px) {
+  /* TEXT */
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  p {
+    font-size: 1rem;
   }
 }
