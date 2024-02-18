@@ -9,6 +9,7 @@ html {
   --gap_l: 4rem;
 
   --radius: 15px;
+  --radius_button: 30px;
 
   --black: #1b1b1b;
   --white: #ffffff;
@@ -18,17 +19,26 @@ html {
   --green_4: #254900;
 }
 
-/***********************************  RESET  ***********************************/
+/***********************************  RESET + BASE ***********************************/
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+article {
+  margin: var(--gap_m) 10%;
+}
+
 /***********************************  TEXT  ***********************************/
 h1 {
   font-family: var(--font_display);
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--white);
@@ -62,15 +72,57 @@ img {
   border-radius: var(--radius);
 }
 
+.img_hero {
+  border-radius: 0;
+}
+
 /***********************************  LINKS + BUTTONS  ***********************************/
+/* LINKS */
+a {
+  font-family: var(--font_body);
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--white);
+}
+
+a:visited {
+  color: var(--white);
+}
+
+a:hover {
+  color: var(--green_1);
+}
+
+.button {
+  background-color: var(--green_3);
+  border-radius: var(--radius_button);
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  width: fit-content;
+}
+
+/***********************************  ELEMENTER  ***********************************/
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front {
+  position: absolute;
+  z-index: 1;
+}
 
 /***********************************  HEADER  ***********************************/
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #fff;
+  padding: 1rem 10%;
+
+  background-color: var(--green_4);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -92,7 +144,7 @@ nav {
 }
 
 .menu li {
-  margin-right: 20px;
+  margin-right: 1rem;
 }
 
 .menu li:last-child {
@@ -101,15 +153,15 @@ nav {
 
 .menu a {
   display: block;
-  padding: 10px;
-  color: #333;
+  padding: 1rem;
+  color: var(--green_1);
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
 }
 
 .menu a:hover {
-  color: #f00;
+  color: var(--white);
 }
 
 .burger {
@@ -121,7 +173,7 @@ nav {
 .burger .line {
   width: 100%;
   height: 2px;
-  background-color: #333;
+  background-color: var(--white);
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
@@ -152,9 +204,10 @@ nav {
 
   nav.active .menu {
     display: block;
-    background-color: #fff;
+    background-color: var(--green_4);
+    opacity: 80%;
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: 0;
     width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -171,6 +224,13 @@ nav {
 }
 
 /***********************************  FOOTER  ***********************************/
+
+/***********************************  FLEX  ***********************************/
+.flex_col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_s);
+}
 
 /******************************************************************************************************************************/
 /**********************************************************  DESKTOP  *********************************************************/
