@@ -127,7 +127,8 @@ article {
 .ingredient_pick_illu {
   position: absolute;
   bottom: 0;
-  right: -20rem;
+  right: 2rem;
+  width: 100px;
 }
 
 /*  */
