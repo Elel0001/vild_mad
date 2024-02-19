@@ -1,0 +1,86 @@
+html {
+  --font_display: "Grandstander", sans-serif;
+  --font_body: "Lato", sans-serif;
+
+  --gap_s: 1rem;
+  --gap_m: 2rem;
+  --gap_l: 4rem;
+
+  --radius: 15px;
+  --radius_button: 30px;
+
+  --black: #1b1b1b;
+  --white: #ffffff;
+  --green_1: #e9f1df;
+  --green_2: #b8d593;
+  --green_3: #688840;
+  --green_4: #254900;
+}
+
+main {
+  background-color: var(--green_1);
+}
+
+h4 {
+  font-family: var(--font_body);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
+button {
+  font-family: var(--font_body);
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--green_3);
+  border-radius: var(--radius_button);
+  border: none;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  width: fit-content;
+}
+
+article {
+  margin: 0%;
+}
+
+.month_template {
+  margin: var(--gap_l) 10%;
+}
+
+.ingredient_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: var(--gap_m);
+}
+
+.ingredient_article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap_s);
+  margin: var(--gap_m) 0 0;
+}
+
+.ingredient_link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 800px) {
+  .month_template {
+    margin: var(--gap_l) 15%;
+  }
+}
