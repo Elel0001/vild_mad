@@ -1,0 +1,52 @@
+.img_hero {
+  filter: brightness(70%);
+}
+
+.grid_foraging {
+  padding: 4rem 0;
+}
+
+.img_forage_mini {
+  max-width: 450px;
+}
+
+.map_section {
+  position: relative;
+}
+
+.img_map {
+  border-radius: 0;
+}
+
+@media screen and (min-width: 800px) {
+  .grid_foraging {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 14rem;
+  }
+
+  .flex_col {
+    justify-content: center;
+  }
+
+  .discover {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .map_boks {
+    background-color: rgba(255, 255, 255, 0.824);
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    left: 60%;
+    max-width: 450px;
+    padding: 3rem;
+    border-radius: var(--radius);
+  }
+
+  .discover {
+    background-color: var(--green_1);
+    padding: 4rem 0;
+  }
+}
