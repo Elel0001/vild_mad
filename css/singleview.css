@@ -98,7 +98,8 @@ article {
   height: auto;
 }
 
-.ingredient_info_1 {
+.ingredient_info_1,
+.ingredient_info_2 {
   display: flex;
   flex-direction: row;
   gap: var(--gap_s);
