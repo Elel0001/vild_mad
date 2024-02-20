@@ -87,6 +87,8 @@ input[type="checkbox"] {
   .grid_quiz {
     display: flex;
     flex-direction: row;
-    padding: 4rem;
+    padding: 4rem 15%;
+    gap: 4rem;
+    align-items: center;
   }
 }
