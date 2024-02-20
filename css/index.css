@@ -46,7 +46,7 @@ input[type="checkbox"] {
 }
 
 .b_center {
-  justify-self: center;
+  align-self: center;
 }
 
 @media screen and (min-width: 800px) {
