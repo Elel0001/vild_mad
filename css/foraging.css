@@ -80,6 +80,105 @@
   padding-bottom: 20px;
 }
 
+/*************** slider ********************/
+:root {
+  --transparent-grey: rgba(0, 0, 0, 0.5);
+}
+
+/* Width of carousel */
+#window,
+#slide-container {
+  width: 100%;
+}
+
+/* Height of carousel */
+#slide-container {
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.slide {
+  width: 100%;
+}
+
+/* Style of arrows */
+.arrow {
+  color: white;
+  font-size: 26px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+}
+
+.arrow:hover {
+  cursor: pointer;
+  background-color: var(--transparent-grey);
+}
+
+#next {
+  left: 100%;
+  transform: translate(-100%, -50%);
+  border-radius: 4px 0px 0px 4px;
+}
+
+#previous {
+  border-radius: 0px 4px 4px 0px;
+}
+
+#dotsContainer {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+}
+
+.dots {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+  display: inline-block;
+  margin: 8px 2px;
+}
+
+/*.dots:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+}*/
+
+.activeDot {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.overlay_slider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+
+.text-box {
+  padding: 10px;
+  margin: 0;
+}
+
+.text-box h2 {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.text-box p {
+  margin: 0;
+}
+
 @media (min-width: 800px) {
   .img_hero {
     height: 300px;
@@ -115,7 +214,7 @@
   }
 
   .foraging_img_tekstbox_1 {
-    grid-column: 3/6;
+    grid-column: 4/6;
     grid-row: 1/3;
   }
 
@@ -125,5 +224,19 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
+  }
+
+  /*************** slider ********************/
+  .overlay_slider {
+    width: 450px;
+    height: 300px;
+  }
+
+  .text-box {
+    padding: 50px;
+  }
+
+  .text-box h2 {
+    padding-bottom: 20px;
   }
 }
