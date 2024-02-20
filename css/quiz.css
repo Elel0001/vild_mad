@@ -1,0 +1,94 @@
+.green_background {
+  background-color: #b8d593;
+  border-radius: 0px;
+  padding: 50px;
+  text-align: center;
+}
+
+section h2 {
+  padding-top: 20px;
+}
+
+.quiz {
+  margin: var(--gap_m) 10%;
+}
+
+.green_tekstboks {
+  background-color: #e9f1df;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  width: fit-content;
+}
+
+.quiz_grid {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.quiz_grid img {
+  width: 100%;
+  object-fit: cover; /* Beskær billedet til at passe uden at strække det */
+  object-position: center; /* Juster beskæringspositionen efter behov */
+}
+
+/***************** checkbox ***********/
+.quiz label {
+  display: block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 0rem 2rem;
+  gap: 20px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 0.1rem;
+  border: 0.2rem solid #688840;
+  border-radius: 5px;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  transform: scale(0);
+  background-color: #688840;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+/********** knap ***********/
+
+#submit {
+  color: #fff;
+  background-color: var(--green_3);
+  border: none; /* Fjern kanten */
+  border-radius: var(--radius_button);
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  display: block; /* Gør knappen til en blok for at anvende margin: auto; */
+  margin-left: auto; /* Centrer i forhold til forældrecontaineren */
+  margin-right: auto; /* Centrer i forhold til forældrecontaineren */
+}
+
+@media (min-width: 800px) {
+  .quiz_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Del containeren i to kolonner med samme bredde */
+    gap: 20px; /* Justér afstanden mellem artikel og billede efter behov */
+  }
+
+  .quiz_grid img {
+    height: 350px;
+  }
+}

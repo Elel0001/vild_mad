@@ -1,48 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
 
     <!-- FAVICON -->
 
     <title>Foraging</title>
 
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/foraging.css">
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/foraging.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div>
-            <a href="index.html"><img src="#" alt="Logo" class="logo"></a>
+      <div>
+        <a href="index.html"><img src="#" alt="Logo" class="logo" /></a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="foraging.html" class="a_mur a_aske">Foraging</a></li>
+          <li><a href="listview.html" class="a_nat a_aske">Ingredients</a></li>
+          <li><a href="map.html" class="a_sol a_aske">Map</a></li>
+          <li><a href="quiz.html" class="a_blom a_aske">Quiz</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="foraging.html" class="a_mur a_aske">Foraging</a></li>
-                <li><a href="listview.html" class="a_nat a_aske">Ingredients</a></li>
-                <li><a href="map.html" class="a_sol a_aske">Map</a></li>
-                <li><a href="quiz.html" class="a_blom a_aske">Quiz</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </nav>
+      </nav>
     </header>
-    <main></main>
+    <main>
+      <section>
+        <div class="hero">
+          <img src="img/VILDMAD_RV_Ramslog_07.jpg" alt="Tester" class="img_hero" />
+          <h1 class="front">Foraging</h1>
+        </div>
+      </section>
+
+      <div class="foraging_grid">
+        <article class="flex_col">
+          <h2>Learn how to forage</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, aliquid veritatis. Consequatur, dolores fugiat? Necessitatibus dicta sint natus accusamus voluptatum, ipsum atque. Delectus at vero laborum, harum laboriosam eligendi saepe?</p>
+          <a href="#" class="button">Testing</a>
+        </article>
+        <div class="foraging_img">
+          <img src="img/VILDMAD_RV_Ramslog_07.jpg" alt="Test" />
+        </div>
+      </div>
+
+      <div class="green">
+        <div class="foraging_green_grid">
+          <h2>The signature of the Deciduous forest</h2>
+          <div class="foraging_green_padding">
+            <div class="foraging_img_tekstbox foraging_img_tekstbox_1"><img src="img/VILDMAD_RV_Ramslog_07.jpg" alt="Test" /></div>
+            <div class="overlay">
+              <div class="green_tekstbox">
+                <h3>Overskrift</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi repellendus officia omnis ab minima, ut voluptatibus illum rerum nam, mollitia laudantium possimus!</p>
+              </div>
+            </div>
+          </div>
+          <div class="foraging_green_padding">
+            <div class="foraging_img_tekstbox"><img src="img/VILDMAD_RV_Ramslog_07.jpg" alt="Test" /></div>
+            <div class="overlay">
+              <div class="green_tekstbox">
+                <h3>Overskrift</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi repellendus officia omnis ab minima, ut voluptatibus illum rerum nam, mollitia laudantium possimus!</p>
+              </div>
+            </div>
+          </div>
+          <div class="foraging_green_padding">
+            <div class="foraging_img_tekstbox"><img src="img/VILDMAD_RV_Ramslog_07.jpg" alt="Test" /></div>
+            <div class="overlay">
+              <div class="green_tekstbox">
+                <h3>Overskrift</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi repellendus officia omnis ab minima, ut voluptatibus illum rerum nam, mollitia laudantium possimus!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="foraging_green_cirkle">
+        <div class="container">
+          <div class="green-circle"></div>
+          <div class="content">
+            <h3>Guidelines</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi repellendus officia omnis ab minima, ut voluptatibus illum rerum nam, mollitia laudantium possimus!</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="green-circle"></div>
+          <div class="content">
+            <h3>Equipment</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi repellendus officia omnis ab minima, ut voluptatibus illum rerum nam, mollitia laudantium possimus!</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="green-circle"></div>
+          <div class="content">
+            <h3>Tips</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi repellendus officia omnis ab minima, ut voluptatibus illum rerum nam, mollitia laudantium possimus!</p>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer></footer>
     <!-- Link til .js -->
     <script src="burgermenu.js"></script>
-</body>
-
+    <script src="foraging.js"></script>
+  </body>
 </html>

@@ -1,0 +1,129 @@
+.img_hero {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* Beskær billedet til at passe uden at strække det */
+  object-position: center; /* Juster beskæringspositionen efter behov */
+}
+
+.foraging_grid {
+  margin: var(--gap_m) 10%;
+}
+
+.green {
+  background-color: #e9f1df;
+}
+
+.foraging_green_grid {
+  margin: var(--gap_m) 10%;
+}
+
+.foraging_img_tekstbox {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.foraging_green_padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.foraging_green_grid h2 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+/***************** tekstbox ********************/
+
+.overlay {
+  /*position: absolute;
+  width: 250px;
+  height: 150px;*/
+  background-color: #688840;
+  border-radius: 10px;
+}
+
+.green_tekstbox {
+  padding: 20px;
+}
+
+.green_tekstbox h3 {
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.green_tekstbox p {
+  color: #fff;
+}
+
+/***************** grøn cirkel ********************/
+
+.foraging_green_cirkle {
+  margin: var(--gap_m) 10%;
+}
+
+.container {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.green-circle {
+  width: 35px;
+  height: 35px;
+  background-color: #688840;
+  border-radius: 50%;
+  margin-right: 15px; /* Juster dette efter behov for afstand mellem cirkel og tekst */
+  flex-shrink: 0;
+}
+
+.content h3 {
+  padding-bottom: 20px;
+}
+
+@media (min-width: 800px) {
+  .img_hero {
+    height: 300px;
+  }
+
+  .foraging_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Del containeren i to kolonner med samme bredde */
+    gap: 20px; /* Justér afstanden mellem artikel og billede efter behov */
+  }
+
+  .foraging_img {
+    order: -1;
+  }
+
+  /***************** tekstbox ********************/
+
+  .overlay {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+  }
+
+  /******** The signature of the Deciduous forest **********/
+  .foraging_green_grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .foraging_green_grid h2 {
+    grid-column: 1/3;
+  }
+
+  .foraging_img_tekstbox_1 {
+    grid-column: 3/6;
+    grid-row: 1/3;
+  }
+
+  /***************** grøn cirkel ********************/
+
+  .foraging_green_cirkle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+}
