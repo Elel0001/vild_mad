@@ -1,11 +1,17 @@
+.h1_map {
+  color: #1b1b1b;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
 main {
   font-family: var(--font_body);
   margin: 0;
   padding: 0;
-  padding-left: 10%;
-  padding-top: 10%;
-  align-items: center;
-  height: 100vh;
+  margin: var(--gap_m) 10%;
+  /*align-items: center;
+  height: 100vh;*/
 }
 
 .search-container {
@@ -16,19 +22,90 @@ main {
 input[type="text"] {
   padding: 8px;
   border: 1px solid #ccc;
-  border-radius: 4px 0 0 4px;
+  border-radius: 6px 0 0 6px;
 }
 
 button {
   padding: 8px 12px;
-  background-color: #4caf50;
-  color: white;
-  border: 1px solid #4caf50;
+  background-color: #688840;
+  color: #fff;
+  border: 1px solid #688840;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
 }
 
 .img_map {
-  max-width: 1000px;
+  width: 100%;
   height: auto;
+}
+
+/************* tekstbox ****************/
+
+.map {
+  display: grid;
+  gap: 20px; /* Tilføjet mellemrum mellem kolonner */
+}
+
+.overlay {
+  /*position: absolute;
+  width: 250px;
+  height: 150px;*/
+  background-color: #e9f1df;
+  border-radius: 10px;
+}
+
+.green_tekstbox {
+  padding: 30px;
+}
+
+.green_tekstbox h2 {
+  padding-bottom: 20px;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+}
+
+/***************** grøn cirkel ********************/
+
+.foraging_green_cirkle {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.green-circle {
+  width: 35px;
+  height: 35px;
+  background-color: #254900;
+  border-radius: 50%;
+  margin-right: 15px; /* Juster dette efter behov for afstand mellem cirkel og tekst */
+  flex-shrink: 0;
+}
+
+@media (min-width: 800px) {
+  .h1_map {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  .map {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Tilføjet mellemrum mellem kolonner */
+  }
+
+  .img_map {
+    grid-column: span 2; /* Billedet fylder 2/3 af rækken */
+  }
+
+  .box {
+    grid-column: span 1; /* H2 fylder resterende 1/3 af rækken */
+  }
 }
