@@ -1,10 +1,33 @@
+/***********************************  VARIABLER  ***********************************/
+
+html {
+  --font_display: "Grandstander", sans-serif;
+  --font_body: "Lato", sans-serif;
+
+  --gap_s: 1rem;
+  --gap_m: 2rem;
+  --gap_l: 4rem;
+
+  --radius: 15px;
+  --radius_button: 30px;
+
+  --black: #1b1b1b;
+  --white: #ffffff;
+  --green_1: #e9f1df;
+  --green_2: #b8d593;
+  --green_3: #688840;
+  --green_4: #254900;
+}
+
 .img_hero {
   filter: brightness(70%);
 }
 
 /*************** FORAGE *******************/
-.grid_foraging {
-  padding: 4rem 0;
+.foraging {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_m);
 }
 
 .img_forage_mini {
@@ -12,9 +35,36 @@
 }
 
 /********* DISCOVER / INGREDIENTS *********/
+.discover {
+  background-color: var(--green_1);
+  padding: var(--gap_l) 10%;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: var(--gap_s);
+}
+
+.ingredient_article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap_s);
+  margin: var(--gap_m) 0 0;
+}
+
+.ingredient_link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 /******************* MAP ******************/
-.map_section {
+.map {
   position: relative;
 }
 
@@ -22,7 +72,29 @@
   border-radius: 0;
 }
 
+.map_boks {
+  background-color: rgba(255, 255, 255, 0.824);
+  position: absolute;
+  z-index: 1;
+  top: 0%;
+  left: 0%;
+  width: 82%;
+  max-width: 500px;
+  padding: var(--gap_m);
+  margin: var(--gap_m);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_s);
+}
+
 /***************** QUIZ *******************/
+.quiz {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_m);
+}
+
 .question {
   background-color: var(--green_1);
   padding: 4rem 4rem 2rem 4rem;
@@ -50,45 +122,59 @@ input[type="checkbox"] {
 }
 
 @media screen and (min-width: 800px) {
-  /**************** FORAGE ****************/
-  .grid_foraging {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 14rem;
+  .order {
+    order: -1;
   }
 
   .flex_col {
     justify-content: center;
+  }
+  /**************** FORAGE ****************/
+  .foraging {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap_l);
+    margin: var(--gap_l) 15%;
+  }
+
+  .list {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   /******** DISCOVER / INGREDIENTS *********/
   .discover {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: var(--green_1);
-    padding: 4rem 0;
+    gap: var(--gap_l);
+    padding: var(--gap_l) 15%;
   }
 
   /******************* MAP ******************/
+  .map {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap_m);
+  }
   .map_boks {
     background-color: rgba(255, 255, 255, 0.824);
     position: absolute;
     z-index: 1;
-    top: 25%;
-    left: 60%;
-    max-width: 450px;
+    top: 20%;
+    left: 55%;
     padding: 3rem;
+    margin: var(--gap_m);
     border-radius: var(--radius);
-    align-content: end;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap_m);
   }
 
   /***************** QUIZ *******************/
-  .grid_quiz {
-    display: flex;
-    flex-direction: row;
-    padding: 4rem 15%;
-    gap: 4rem;
-    align-items: center;
+  .quiz {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap_l);
+    margin: var(--gap_l) 15%;
   }
 }

@@ -57,6 +57,14 @@ h3 {
   font-weight: 400;
   color: var(--black);
 }
+
+h4 {
+  font-family: var(--font_body);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
 p {
   font-family: var(--font_body);
   font-size: 0.8rem;
