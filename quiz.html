@@ -1,48 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
 
     <!-- FAVICON -->
 
     <title>Quiz</title>
 
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/quiz.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div>
-            <a href="index.html"><img src="#" alt="Logo" class="logo"></a>
+      <div>
+        <a href="index.html"><img src="#" alt="Logo" class="logo" /></a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="foraging.html" class="a_mur a_aske">Foraging</a></li>
+          <li><a href="listview.html" class="a_nat a_aske">Ingredients</a></li>
+          <li><a href="map.html" class="a_sol a_aske">Map</a></li>
+          <li><a href="quiz.html" class="a_blom a_aske">Quiz</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="foraging.html" class="a_mur a_aske">Foraging</a></li>
-                <li><a href="listview.html" class="a_nat a_aske">Ingredients</a></li>
-                <li><a href="map.html" class="a_sol a_aske">Map</a></li>
-                <li><a href="quiz.html" class="a_blom a_aske">Quiz</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </nav>
+      </nav>
     </header>
-    <main></main>
+    <main>
+      <section>
+        <div class="green_background">
+          <h1>The Learning Duel of the</h1>
+          <h1>Deciduous Forest</h1>
+          <h2>Who will be the ultimate champion?</h2>
+        </div>
+      </section>
+      <div class="quiz">
+        <form name="contact" netlify>
+          <div class="quiz_grid">
+            <div>
+              <h2>1.</h2>
+              <p class="green_tekstboks">Which of the following trees are not commenly found in the deciduous forest?</p>
+              <label> <input type="checkbox" name="tree[]" id="pine" /> Pine </label>
+              <label> <input type="checkbox" name="tree[]" id="oak" /> Oak </label>
+              <label> <input type="checkbox" name="tree[]" id="ash" /> Ash </label>
+            </div>
+            <div><img src="img/VILDMAD_RV_Ramslog_07.jpg" alt="test" /></div>
+          </div>
+          <div class="quiz_grid">
+            <div>
+              <h2>2.</h2>
+              <p class="green_tekstboks">Which season is the least productive for foraging in the deciduous forest?</p>
+              <label> <input type="checkbox" name="season[]" id="spring" /> Spring </label>
+              <label> <input type="checkbox" name="season[]" id="summer" /> Summer </label>
+              <label> <input type="checkbox" name="season[]" id="fall" /> Fall </label>
+            </div>
+            <div><img src="img/VILDMAD_RV_Ramslog_07.jpg" alt="test" /></div>
+          </div>
+          <div class="quiz_grid">
+            <div>
+              <h2>3.</h2>
+              <p class="green_tekstboks">How many percentage of Denmark's forest area is pure deciduous forest?</p>
+              <label> <input type="checkbox" name="percentage[]" id="24" /> 24% </label>
+              <label> <input type="checkbox" name="percentage[]" id="34" /> 34% </label>
+              <label> <input type="checkbox" name="percentage[]" id="44" /> 44% </label>
+            </div>
+            <div><img src="img/VILDMAD_RV_Ramslog_07.jpg" alt="test" /></div>
+          </div>
+          <div class="quiz_grid">
+            <div>
+              <h2>4.</h2>
+              <p class="green_tekstboks">When is your best chance to find mushrooms in the forest after a rain shower?</p>
+              <label> <input type="checkbox" name="mushrooms[]" id="1" /> 1 day after rain </label>
+              <label> <input type="checkbox" name="mushrooms[]" id="4" /> 4 days after rain </label>
+              <label> <input type="checkbox" name="mushrooms[]" id="7" /> 7 days after rain </label>
+            </div>
+            <div><img src="img/VILDMAD_RV_Ramslog_07.jpg" alt="test" /></div>
+          </div>
+          <input type="submit" id="submit" />
+        </form>
+      </div>
+    </main>
     <footer></footer>
     <!-- Link til .js -->
     <script src="burgermenu.js"></script>
-</body>
-
+  </body>
 </html>
