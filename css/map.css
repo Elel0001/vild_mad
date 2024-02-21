@@ -1,5 +1,5 @@
 .h1_map {
-  color: #1b1b1b;
+  color: var(--black);
   text-align: center;
   padding-top: 25px;
   padding-bottom: 35px;
@@ -10,8 +10,6 @@ main {
   margin: 0;
   padding: 0;
   margin: var(--gap_m) 10%;
-  /*align-items: center;
-  height: 100vh;*/
 }
 
 .search-container {
@@ -27,9 +25,9 @@ input[type="text"] {
 
 button {
   padding: 8px 12px;
-  background-color: #688840;
+  background-color: var(--green_3);
   color: #fff;
-  border: 1px solid #688840;
+  border: 1px solid var(--green_3);
   border-radius: 0 4px 4px 0;
   cursor: pointer;
 }
@@ -50,7 +48,7 @@ button {
   /*position: absolute;
   width: 250px;
   height: 150px;*/
-  background-color: #e9f1df;
+  background-color: var(--green_1);
   border-radius: 10px;
 }
 
@@ -83,7 +81,7 @@ button {
 .green-circle {
   width: 35px;
   height: 35px;
-  background-color: #254900;
+  background-color: var(--green_4);
   border-radius: 50%;
   margin-right: 15px; /* Juster dette efter behov for afstand mellem cirkel og tekst */
   flex-shrink: 0;

@@ -76,7 +76,7 @@ html {
 .green-circle {
   width: 35px;
   height: 35px;
-  background-color: #688840;
+  background-color: var(--green_3);
   border-radius: 50%;
   margin-right: 15px; /* Juster dette efter behov for afstand mellem cirkel og tekst */
   flex-shrink: 0;
@@ -112,13 +112,13 @@ html {
 
 /* Style of arrows */
 .arrow {
-  color: white;
+  color: var(--white);
   font-size: 26px;
   position: absolute;
   top: 50%;
   transform: translate(0%, -50%);
   padding: 16px;
-  background-color: rgba(0, 0, 0, 0);
+  /* background-color: rgba(0, 0, 0, 0); */
   transition: background-color 0.3s ease;
 }
 
