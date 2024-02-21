@@ -120,16 +120,16 @@ a:hover {
 
 /* Nedenstående er lånt herfra https://codepen.io/toianw/pen/YqEqrz */
 
-li {
+nav li {
   list-style-type: none;
 }
 
-li > a {
+nav li > a {
   display: inline-block;
   position: relative;
 }
 
-li > a::after {
+nav li > a::after {
   content: "";
   display: block;
   margin: auto;
@@ -140,8 +140,12 @@ li > a::after {
   transition: all 0.3s;
 }
 
-li > a:hover::after,
-li > a.active-nav::after {
+nav li a:hover {
+  text-decoration: none;
+}
+
+nav li > a:hover::after,
+nav li > a.active-nav::after {
   width: 100%;
   background: var(--green_3);
 }
@@ -292,7 +296,8 @@ footer p {
   gap: var(--gap_m);
 }
 
-.footer_col {
+.footer_col_vildmad,
+.footer_col_mad {
   display: flex;
   flex-direction: column;
   gap: var(--gap_s);
@@ -418,5 +423,14 @@ ul.breadcrumb li a:hover {
     justify-content: space-between;
     gap: var(--gap_m);
     width: 100%;
+  }
+
+  .social_flex {
+    align-items: center;
+  }
+
+  .footer_col_mad {
+    align-items: end;
+    min-width: 233px;
   }
 }

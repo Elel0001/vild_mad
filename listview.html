@@ -1,77 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex" />
 
-    <!-- FAVICON -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
 
-    <title>Ingredients</title>
+  <!-- FAVICON -->
 
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/listview.css" />
+  <title>Ingredients</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
-  </head>
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/listview.css" />
 
-  <body>
-    <header>
-      <div>
-        <a href="index.html"><img src="#" alt="Logo" class="logo" /></a>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="header_link">
+      <picture>
+        <source media="(min-width:800px)" srcset="img/logo_main.svg" class="logo">
+        <img src="img/logo_long.svg" alt="logo" style="width:auto;" class="logo">
+      </picture>
+    </a>
+    <nav>
+      <ul class="menu">
+        <li><a href="foraging.html">Foraging</a></li>
+        <li><a href="listview.html" class="active">Ingredients</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
       </div>
-      <nav>
-        <ul class="menu">
-          <li><a href="foraging.html" class="a_mur a_aske">Foraging</a></li>
-          <li><a href="listview.html" class="a_nat a_aske">Ingredients</a></li>
-          <li><a href="map.html" class="a_sol a_aske">Map</a></li>
-          <li><a href="quiz.html" class="a_blom a_aske">Quiz</a></li>
-        </ul>
-        <div class="burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <div class="hero">
-          <img src="img/ingredients.webp" alt="mushrooms" class="img_hero" />
-          <!--Credit: Photo by Amy Humphries on Unsplash-->
-          <h1 class="front">Deciduous forest</h1>
-        </div>
-      </section>
-      <!-- Filtering -->
-
-      <section class="month_template">
-        <h2>All ingredients</h2>
-        <div class="ingredient_container"></div>
-      </section>
-      <div class="center">
-        <button class="center">Load more</button>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <div class="hero">
+        <img src="img/ingredients.webp" alt="mushrooms" class="img_hero" />
+        <!--Credit: Photo by Amy Humphries on Unsplash-->
+        <h1 class="front">Deciduous forest</h1>
       </div>
-    </main>
-    <footer></footer>
+    </section>
+    <!-- Filtering -->
 
-    <!-- Templates -->
-    <template class="month_template">
-      <h2>Month</h2>
+    <section class="month_template">
+      <h2>All ingredients</h2>
       <div class="ingredient_container"></div>
-    </template>
-    <template class="ingredient_template">
-      <article class="ingredient_article">
-        <img class="ingredient_image" src="img/VILDMAD_RV_Ramslog_02.jpg" alt="Image of ingredient" />
-        <h4 class="ingredient_name">Name</h4>
+    </section>
+    <div class="center">
+      <button class="center">Load more</button>
+    </div>
+  </main>
+  <footer>
+    <section class="footer">
+      <div class="footer_col">
+        <p>Vild Mad <br />Guldbergsgade 29 N, 2200 Kbh N <br />kontakt@vild-mad.dk</p>
+        <img src="img/logo_long.svg" alt="logo" class="footer_logo" />
+      </div>
+      <div class="social_flex">
+        <p>Follow us on social media</p>
+        <div class="social_icon_flex">
+          <a href="https://www.instagram.com/">
+            <img src="img/instagram.svg" alt="Instagram Logo" class="icon_social" />
+          </a>
+          <a href="https://www.facebook.com/">
+            <img src="img/facebook.svg" alt="Facebook Logo" class="icon_social" />
+          </a>
+        </div>
+      </div>
+      <div class="footer_col">
+        <p>A project initiated by</p>
+        <img src="img/mad.png" alt="MAD logo" class="mad_logo" />
+      </div>
+    </section>
+    <p class="small">Developed by Gr. 09 | KEA MMD 2024</p>
+  </footer>
 
-        <a class="ingredient_link" href="singleview.html"></a>
-      </article>
-    </template>
+  <!-- Templates -->
+  <template class="month_template">
+    <h2>Month</h2>
+    <div class="ingredient_container"></div>
+  </template>
+  <template class="ingredient_template">
+    <article class="ingredient_article">
+      <img class="ingredient_image" src="img/VILDMAD_RV_Ramslog_02.jpg" alt="Image of ingredient" />
+      <h4 class="ingredient_name">Name</h4>
 
-    <!-- Link til .js -->
-    <script src="js/burgermenu.js"></script>
-    <script src="js/listview.js"></script>
-  </body>
+      <a class="ingredient_link" href="singleview.html"></a>
+    </article>
+  </template>
+
+  <!-- Link til .js -->
+  <script src="js/burgermenu.js"></script>
+  <script src="js/listview.js"></script>
+</body>
+
 </html>

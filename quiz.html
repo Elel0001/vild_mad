@@ -28,15 +28,18 @@
 
 <body>
   <header>
-    <div>
-      <a href="index.html"><img src="#" alt="Logo" class="logo" /></a>
-    </div>
+    <a href="index.html" class="header_link">
+      <picture>
+        <source media="(min-width:800px)" srcset="img/logo_main.svg" class="logo">
+        <img src="img/logo_long.svg" alt="logo" style="width:auto;" class="logo">
+      </picture>
+    </a>
     <nav>
       <ul class="menu">
-        <li><a href="foraging.html" class="a_mur a_aske">Foraging</a></li>
-        <li><a href="listview.html" class="a_nat a_aske">Ingredients</a></li>
-        <li><a href="map.html" class="a_sol a_aske">Map</a></li>
-        <li><a href="quiz.html" class="a_blom a_aske">Quiz</a></li>
+        <li><a href="foraging.html">Foraging</a></li>
+        <li><a href="listview.html">Ingredients</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="quiz.html" class="active">Quiz</a></li>
       </ul>
       <div class="burger">
         <div class="line"></div>
@@ -99,7 +102,30 @@
       </form>
     </div>
   </main>
-  <footer></footer>
+  <footer>
+    <section class="footer">
+      <div class="footer_col">
+        <p>Vild Mad <br />Guldbergsgade 29 N, 2200 Kbh N <br />kontakt@vild-mad.dk</p>
+        <img src="img/logo_long.svg" alt="logo" class="footer_logo" />
+      </div>
+      <div class="social_flex">
+        <p>Follow us on social media</p>
+        <div class="social_icon_flex">
+          <a href="https://www.instagram.com/">
+            <img src="img/instagram.svg" alt="Instagram Logo" class="icon_social" />
+          </a>
+          <a href="https://www.facebook.com/">
+            <img src="img/facebook.svg" alt="Facebook Logo" class="icon_social" />
+          </a>
+        </div>
+      </div>
+      <div class="footer_col">
+        <p>A project initiated by</p>
+        <img src="img/mad.png" alt="MAD logo" class="mad_logo" />
+      </div>
+    </section>
+    <p class="small">Developed by Gr. 09 | KEA MMD 2024</p>
+  </footer>
   <!-- Link til .js -->
   <script src="js/burgermenu.js"></script>
 </body>
