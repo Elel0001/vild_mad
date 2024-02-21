@@ -69,7 +69,9 @@ p {
   font-family: var(--font_body);
   font-size: 0.8rem;
   font-weight: 400;
+  line-height: 150%;
   color: var(--black);
+  max-width: 65ch;
 }
 
 /***********************************  IMAGES  ***********************************/

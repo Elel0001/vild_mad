@@ -175,9 +175,13 @@ html {
   display: flex;
   flex-direction: column;
   gap: var(--gap_s);
-  padding: var(--gap_m);
+  padding: var(--gap_s);
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: var(--radius);
+}
+
+.button {
+  margin: 0;
 }
 
 @media (min-width: 800px) {
@@ -268,14 +272,6 @@ html {
   }
 
   .text-box {
-    padding: 30px;
-  }
-
-  .text-box h2 {
-    padding-bottom: 20px;
-  }
-
-  .text-box p {
-    padding-bottom: 50px;
+    padding: var(--gap_s);
   }
 }
