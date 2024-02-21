@@ -70,6 +70,11 @@
   border-radius: 0;
 }
 
+.img_map {
+  max-width: 100%; /* Begræns maksimal bredde til forælderens bredde */
+  height: auto; /* Bevar billedets proportioner */
+}
+
 .map_boks {
   background-color: rgba(255, 255, 255, 0.824);
   position: absolute;
