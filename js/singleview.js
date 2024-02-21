@@ -29,6 +29,7 @@ function showIngredient(ingredient) {
   //Jeg er obs på at når jeg bruger consol log, kan jeg se at jeg får et array med et objekt i. Derfor skal jeg ind og vælge det 1. objekt, altså [0], i arrayet, få at få det data jeg ønsker frem
 
   //Indsætter mit indhold fra mit objekt i html'en
+  document.querySelector(".breadcrumb_ingredient").textContent = ingredient[0].name;
   document.querySelector(".ingredient_type").textContent = ingredient[0].type;
   document.querySelector(".ingredient_name").textContent = ingredient[0].name;
   document.querySelector(".ingrdient_desc").textContent = ingredient[0].description;
