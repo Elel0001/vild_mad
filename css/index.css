@@ -164,6 +164,29 @@ input[type="checkbox"]:checked::before {
   .flex_col {
     justify-content: center;
   }
+
+  /**************** ilustrationer ****************/
+  .mand {
+    position: absolute;
+    top: 43%;
+    left: 78%;
+    width: 100px;
+  }
+
+  .gren_7 {
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    width: 170px;
+  }
+
+  .gren_3 {
+    position: absolute;
+    top: -2%;
+    left: 72%;
+    width: 85px;
+  }
+
   /**************** FORAGE ****************/
   .foraging {
     display: grid;
