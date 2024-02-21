@@ -1,14 +1,13 @@
+//Loader siden og går til init
 window.addEventListener("DOMContentLoaded", init);
 
-// https://hhmpiztfssfaluwezhgq.supabase.co
-
-//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhobXBpenRmc3NmYWx1d2V6aGdxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDgyNzA4NTUsImV4cCI6MjAyMzg0Njg1NX0.TqriEz5DkZTixJO6AhMtVsvt7xiSjMvpJm525z2c9jM
-
+//Definere konstanter
+//Jeg finder id'et i URL'en
 const URLparams = new URLSearchParams(window.location.search);
 const id = URLparams.get("id");
-const ingredientsURL = `https://hhmpiztfssfaluwezhgq.supabase.co/rest/v1/vild_mad?id=eq.${id}&select=*`;
 
-//hhmpiztfssfaluwezhgq.supabase.co/rest/v1/vild_mad?id=eq.15&select=*
+//Indsætter med konkatenering det nu fundet id, i URL'en til API'et, så det data jeg har klikket på i listview, bliver vist i dette singleview
+const ingredientsURL = `https://hhmpiztfssfaluwezhgq.supabase.co/rest/v1/vild_mad?id=eq.${id}&select=*`;
 
 function init() {
   console.log("init");

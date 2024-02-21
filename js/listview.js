@@ -1,15 +1,14 @@
+//Loader siden og går til init
 window.addEventListener("DOMContentLoaded", init);
 
-// https://hhmpiztfssfaluwezhgq.supabase.co
-
-//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhobXBpenRmc3NmYWx1d2V6aGdxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDgyNzA4NTUsImV4cCI6MjAyMzg0Njg1NX0.TqriEz5DkZTixJO6AhMtVsvt7xiSjMvpJm525z2c9jM
-
+//Laver to variabler
 let ingredientTemplate;
 let ingredientContainer;
 
 function init() {
   console.log("init");
 
+  //Definere værdier for variabler
   ingredientTemplate = document.querySelector(".ingredient_template");
   console.log("ingredientTemplate", ingredientTemplate);
 
@@ -47,6 +46,7 @@ function showIngredients(ingredientJSON) {
     //Ændre href, så der linkes til den datasæt der er klikket på
     ingredientClone.querySelector(".ingredient_link").href = `singleview.html?id=${ingredient.id}`;
 
+    //Append
     ingredientContainer.appendChild(ingredientClone);
   });
 }

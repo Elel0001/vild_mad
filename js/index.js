@@ -1,18 +1,16 @@
+//Loader siden og går til init
 window.addEventListener("DOMContentLoaded", init);
 
+//Laver to variabler
 let ingredientTemplate;
 let ingredientContainer;
 
 function init() {
-  console.log("init");
-
+  //Definere værdier for variabler
   ingredientTemplate = document.querySelector(".ingredient_template");
-  console.log("ingredientTemplate", ingredientTemplate);
-
   ingredientContainer = document.querySelector(".ingredient_container");
-  console.log("ingredientContainer", ingredientContainer);
 
-  //Henter dataen med fetch
+  //Henter data fra Subabase API med fetch og apikey
   fetch("https://hhmpiztfssfaluwezhgq.supabase.co/rest/v1/vild_mad?select=id,name,profile_image&limit=6", {
     method: "GET",
     headers: {
@@ -43,6 +41,7 @@ function showIngredients(ingredientJSON) {
     //Ændre href, så der linkes til den datasæt der er klikket på
     ingredientClone.querySelector(".ingredient_link").href = `singleview.html?id=${ingredient.id}`;
 
+    //Append
     ingredientContainer.appendChild(ingredientClone);
   });
 }
