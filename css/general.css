@@ -236,6 +236,60 @@ nav {
 }
 
 /***********************************  FOOTER  ***********************************/
+footer {
+  background-color: var(--green_4);
+  padding: var(--gap_m) 10%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_m);
+}
+
+footer p {
+  color: var(--white);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_m);
+}
+
+.footer_col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_s);
+  align-items: start;
+}
+
+.footer_logo {
+  height: 50px;
+  width: auto;
+  border-radius: 0px;
+}
+
+.social_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.social_icon_flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.icon_social,
+.mad_logo {
+  width: 50px;
+}
+
+.small {
+  color: var(--green_2);
+  font-size: 0.75rem;
+}
 
 /***********************************  FLEX  ***********************************/
 .flex_col {
@@ -277,4 +331,20 @@ nav {
   p {
     font-size: 1rem;
   }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--gap_m);
+    width: 100%;
+  }
+
+  .so;
 }
