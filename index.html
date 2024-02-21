@@ -28,9 +28,14 @@
 
 <body>
   <header>
-    <div>
-      <a href="index.html"><img src="#" alt="Logo" class="logo"></a>
-    </div>
+
+    <a href="index.html" class="header_link">
+      <picture>
+        <source media="(min-width:800px)" srcset="img/logo_main.svg" class="logo">
+        <img src="img/logo_long.svg" alt="logo" style="width:auto;" class="logo">
+      </picture>
+    </a>
+
     <nav>
       <ul class="menu">
         <li><a href="foraging.html" class="a_mur a_aske">Foraging</a></li>
