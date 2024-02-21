@@ -1,161 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex" />
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
 
-  <!-- FAVICON -->
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-  <link rel="manifest" href="site.webmanifest" />
+    <title>Vild mad</title>
 
-  <title>Vild mad</title>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/index.css" />
 
-  <!-- STYLESHEETS -->
-  <link rel="stylesheet" href="css/general.css" />
-  <link rel="stylesheet" href="css/index.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+  </head>
 
-  <!-- GOOGLE FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-    rel="stylesheet" />
-</head>
-
-<body>
-  <header>
-    <a href="index.html" class="header_link">
-      <picture>
-        <source media="(min-width:800px)" srcset="img/logo_main.svg" class="logo">
-        <img src="img/logo_long.svg" alt="logo" style="width:auto;" class="logo">
-      </picture>
-    </a>
-    <nav>
-      <ul class="menu">
-        <li><a href="foraging.html">Foraging</a></li>
-        <li><a href="listview.html">Ingredients</a></li>
-        <li><a href="map.html">Map</a></li>
-        <li><a href="quiz.html">Quiz</a></li>
-      </ul>
-      <div class="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <div class="hero">
-        <img src="img/index_hero.webp" alt="Trees" class="img_hero" />
-        <h1 class="front">Deciduous forest</h1>
-        <img class="mand" src="img/mand.svg" alt="mand" />
-        <img class="gren_7" src="img/gren7.svg" alt="gren" />
-        <img class="gren_3" src="img/gren3.svg" alt="gren" />
-      </div>
-    </section>
-
-    <article class="foraging">
-      <div class="flex_col">
-        <h2>Learn how to forage</h2>
-        <p>
-          Exploring and cooking wild food is a fun journey that anyone can enjoy. You don't have to be a nature expert,
-          biologist, or chef. Just use your common sense, trust your senses, and do a bit of planning before going
-          outside. Whether you know what you're looking for or just want to explore, remember to be curious and think
-          about a few
-          important things before you start.
-        </p>
-        <a href="foraging.html" class="button">Read more</a>
-      </div>
-      <img src="img/berries.webp" alt="berries" class="img_forage_mini" />
-      <!-- Photo by <a href="https://unsplash.com/@bthjnr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Beth Jnr</a> on <a href="https://unsplash.com/photos/person-holding-black-round-fruits-bgFJ8_QBs0k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>-->
-    </article>
-
-    <section class="discover">
-      <div class="flex_col">
-        <h2>Discover the ingredients of nature</h2>
-        <p>In the deciduous forest, you can find tasty berries, nuts, cool mushrooms, and nice-smelling herbs. Learn
-          more about the specific ingredients, and when and where you can find it. Let's explore the forest and discover
-          some wonderful delights!</p>
-      </div>
-      <div class="flex_col order">
-        <div class="ingredient_container"></div>
-        <div class="center">
-
-          <a href="listview.html" class="button">View more ingredients</a>
+  <body>
+    <header>
+      <a href="index.html" class="header_link">
+        <picture>
+          <source media="(min-width:800px)" srcset="img/logo_main.svg" class="logo" />
+          <img src="img/logo_long.svg" alt="logo" style="width: auto" class="logo" />
+        </picture>
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="foraging.html">Foraging</a></li>
+          <li><a href="listview.html">Ingredients</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
-      </div>
-    </section>
-
-    <section class="map">
-      <!-- <img src="img/google.webp" alt="map" class="img_map"> -->
-      <picture>
-        <source media="(min-width:650px)" srcset="img/google.webp" class="img_map" />
-        <img src="img/google_2.png" alt="Flowers" style="width: auto" class="img_map" />
-      </picture>
-      <div class="map_boks">
-        <h2>Go on a hunt</h2>
-        <p>Exploring the forest is even more exciting with a map in hand! Just like a treasure hunt, using a map helps
-          us find the delicious ingredients hidden in the deciduous forest.</p>
-        <a href="map.html" class="button">View more</a>
-      </div>
-    </section>
-    <article class="quiz">
-      <div class="flex_col">
-        <h2>The Learning Duel of the Deciduous Forest</h2>
-        <p>Who will be the champion?</p>
-      </div>
-      <div class="question order">
-        <p>Which of the following trees are commenly found in the deciduous forest?</p>
-        <!-- Checkbox med inspiration fra chatGPT -->
-        <label> <input type="checkbox" name="color" value="oak" /> Oak </label>
-        <label> <input type="checkbox" name="color" value="pine" /> Pine </label>
-        <a href="quiz.html" class="button b_center">View full quiz</a>
-      </div>
-    </article>
-  </main>
-  <footer>
-    <section class="footer">
-      <div class="footer_col_vildmad">
-        <p>Vild Mad <br />Guldbergsgade 29 N, 2200 Kbh N <br />kontakt@vild-mad.dk</p>
-        <img src="img/logo_long.svg" alt="logo" class="footer_logo" />
-      </div>
-      <div class="social_flex">
-        <p>Follow us on social media</p>
-        <div class="social_icon_flex">
-          <a href="https://www.instagram.com/">
-            <img src="img/instagram.svg" alt="Instagram Logo" class="icon_social" />
-          </a>
-          <a href="https://www.facebook.com/">
-            <img src="img/facebook.svg" alt="Facebook Logo" class="icon_social" />
-          </a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="hero">
+          <img src="img/index_hero.webp" alt="Trees" class="img_hero" />
+          <h1 class="front">Deciduous forest</h1>
+          <img class="mand" src="img/mand.svg" alt="mand" />
+          <img class="gren_7" src="img/gren7.svg" alt="gren" />
+          <img class="gren_3" src="img/gren3.svg" alt="gren" />
         </div>
-      </div>
-      <div class="footer_col_mad">
-        <p>A project initiated by</p>
-        <img src="img/mad.png" alt="MAD logo" class="mad_logo" />
-      </div>
-    </section>
-    <p class="small">Developed by Group 09 | KEA MMD 2024</p>
-  </footer>
+      </section>
 
-  <!-- Templates -->
-  <template class="ingredient_template">
-    <article class="ingredient_article">
-      <img class="ingredient_image" src="img/VILDMAD_RV_Ramslog_02.jpg" alt="Image of ingredient" />
-      <h4 class="ingredient_name">Name</h4>
+      <article class="foraging">
+        <div class="flex_col">
+          <h2>Learn how to forage</h2>
+          <p>
+            Exploring and cooking wild food is a fun journey that anyone can enjoy. You don't have to be a nature expert, biologist, or chef. Just use your common sense, trust your senses, and do a bit of planning before going outside. Whether you know what you're looking for or just want to explore, remember to be curious and think about a few
+            important things before you start.
+          </p>
+          <a href="foraging.html" class="button">Read more</a>
+        </div>
+        <img src="img/berries.webp" alt="berries" class="img_forage_mini" />
+        <!-- Photo by <a href="https://unsplash.com/@bthjnr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Beth Jnr</a> on <a href="https://unsplash.com/photos/person-holding-black-round-fruits-bgFJ8_QBs0k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>-->
+      </article>
 
-      <a class="ingredient_link" href="singleview.html"></a>
-    </article>
-  </template>
+      <section class="discover">
+        <div class="flex_col">
+          <h2>Discover the ingredients of nature</h2>
+          <p>In the deciduous forest, you can find tasty berries, nuts, cool mushrooms, and nice-smelling herbs. Learn more about the specific ingredients, and when and where you can find it. Let's explore the forest and discover some wonderful delights!</p>
+        </div>
+        <div class="flex_col order">
+          <div class="ingredient_container"></div>
+          <div class="center">
+            <a href="listview.html" class="button">View more ingredients</a>
+          </div>
+        </div>
+      </section>
 
-  <!-- Link til .js -->
-  <script src="js/burgermenu.js"></script>
-  <script src="js/index.js"></script>
-</body>
+      <section class="map">
+        <!-- <img src="img/google.webp" alt="map" class="img_map"> -->
+        <picture>
+          <source media="(min-width:650px)" srcset="img/google.webp" class="img_map" />
+          <img src="img/google_2.webp" alt="Flowers" style="width: auto" class="img_map" />
+        </picture>
+        <div class="map_boks">
+          <h2>Go on a hunt</h2>
+          <p>Exploring the forest is even more exciting with a map in hand! Just like a treasure hunt, using a map helps us find the delicious ingredients hidden in the deciduous forest.</p>
+          <a href="map.html" class="button">View more</a>
+        </div>
+      </section>
+      <article class="quiz">
+        <div class="flex_col">
+          <h2>The Learning Duel of the Deciduous Forest</h2>
+          <p>Who will be the champion?</p>
+        </div>
+        <div class="question order">
+          <p>Which of the following trees are commenly found in the deciduous forest?</p>
+          <!-- Checkbox med inspiration fra chatGPT -->
+          <label> <input type="checkbox" name="color" value="oak" /> Oak </label>
+          <label> <input type="checkbox" name="color" value="pine" /> Pine </label>
+          <a href="quiz.html" class="button b_center">View full quiz</a>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <section class="footer">
+        <div class="footer_col_vildmad">
+          <p>Vild Mad <br />Guldbergsgade 29 N, 2200 Kbh N <br />kontakt@vild-mad.dk</p>
+          <img src="img/logo_long.svg" alt="logo" class="footer_logo" />
+        </div>
+        <div class="social_flex">
+          <p>Follow us on social media</p>
+          <div class="social_icon_flex">
+            <a href="https://www.instagram.com/">
+              <img src="img/instagram.svg" alt="Instagram Logo" class="icon_social" />
+            </a>
+            <a href="https://www.facebook.com/">
+              <img src="img/facebook.svg" alt="Facebook Logo" class="icon_social" />
+            </a>
+          </div>
+        </div>
+        <div class="footer_col_mad">
+          <p>A project initiated by</p>
+          <img src="img/mad.png" alt="MAD logo" class="mad_logo" />
+        </div>
+      </section>
+      <p class="small">Developed by Group 09 | KEA MMD 2024</p>
+    </footer>
 
+    <!-- Templates -->
+    <template class="ingredient_template">
+      <article class="ingredient_article">
+        <img class="ingredient_image" src="img/VILDMAD_RV_Ramslog_02.jpg" alt="Image of ingredient" />
+        <h4 class="ingredient_name">Name</h4>
+
+        <a class="ingredient_link" href="singleview.html"></a>
+      </article>
+    </template>
+
+    <!-- Link til .js -->
+    <script src="js/burgermenu.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>

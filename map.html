@@ -1,105 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex" />
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
 
-  <!-- FAVICON -->
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-  <link rel="manifest" href="site.webmanifest" />
+    <title>Map</title>
 
-  <title>Map</title>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/map.css" />
 
-  <!-- STYLESHEETS -->
-  <link rel="stylesheet" href="css/general.css" />
-  <link rel="stylesheet" href="css/map.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+  </head>
 
-  <!-- GOOGLE FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-    rel="stylesheet" />
-</head>
-
-<body>
-  <header>
-    <a href="index.html" class="header_link">
-      <picture>
-        <source media="(min-width:800px)" srcset="img/logo_main.svg" class="logo">
-        <img src="img/logo_long.svg" alt="logo" style="width:auto;" class="logo">
-      </picture>
-    </a>
-    <nav>
-      <ul class="menu">
-        <li><a href="foraging.html">Foraging</a></li>
-        <li><a href="listview.html">Ingredients</a></li>
-        <li><a href="map.html" class="active">Map</a></li>
-        <li><a href="quiz.html">Quiz</a></li>
-      </ul>
-      <div class="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <h1 class="h1_map">Map</h1>
-    <section class="search-container">
-      <input type="text" placeholder="Search area..." />
-      <button type="submit">Søg</button>
-    </section>
-    <div class="map">
-      <img src="img/img_map.png" alt="kortoversigt" class="img_map" />
-      <div class="green_tekstbox overlay">
-        <h2>Oyster mushroom</h2>
-        <p>Oyster mushroom is a flavorful fungus with a distinctive cup-shaped cap and a mild, nutty taste. It often
-          thrives on tree trunks and is popular in culinary dishes.</p>
-        <div class="foraging_green_cirkle">
-          <div class="container">
-            <div class="green-circle"></div>
-            <div class="content">
-              <p>This plant can easily be confused with the rubber bolete, but neither of the plants is toxic.</p>
+  <body>
+    <header>
+      <a href="index.html" class="header_link">
+        <picture>
+          <source media="(min-width:800px)" srcset="img/logo_main.svg" class="logo" />
+          <img src="img/logo_long.svg" alt="logo" style="width: auto" class="logo" />
+        </picture>
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="foraging.html">Foraging</a></li>
+          <li><a href="listview.html">Ingredients</a></li>
+          <li><a href="map.html" class="active">Map</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="h1_map">Map</h1>
+      <section class="search-container">
+        <input type="text" placeholder="Search area..." />
+        <button type="submit">Søg</button>
+      </section>
+      <div class="map">
+        <img src="img/kort_desktop.webp" alt="kortoversigt" class="img_map" />
+        <div class="green_tekstbox overlay">
+          <h2>Oyster mushroom</h2>
+          <p>Oyster mushroom is a flavorful fungus with a distinctive cup-shaped cap and a mild, nutty taste. It often thrives on tree trunks and is popular in culinary dishes.</p>
+          <div class="foraging_green_cirkle">
+            <div class="container">
+              <div class="green-circle"></div>
+              <div class="content">
+                <p>This plant can easily be confused with the rubber bolete, but neither of the plants is toxic.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="center-container">
-          <a href="singleview.html" class="button">View receipts</a>
-        </div>
-      </div>
-    </div>
-  </main>
-  <footer>
-    <section class="footer">
-      <div class="footer_col_vildmad">
-        <p>Vild Mad <br />Guldbergsgade 29 N, 2200 Kbh N <br />kontakt@vild-mad.dk</p>
-        <img src="img/logo_long.svg" alt="logo" class="footer_logo" />
-      </div>
-      <div class="social_flex">
-        <p>Follow us on social media</p>
-        <div class="social_icon_flex">
-          <a href="https://www.instagram.com/">
-            <img src="img/instagram.svg" alt="Instagram Logo" class="icon_social" />
-          </a>
-          <a href="https://www.facebook.com/">
-            <img src="img/facebook.svg" alt="Facebook Logo" class="icon_social" />
-          </a>
+          <div class="center-container">
+            <a href="singleview.html" class="button">View receipts</a>
+          </div>
         </div>
       </div>
-      <div class="footer_col_mad">
-        <p>A project initiated by</p>
-        <img src="img/mad.png" alt="MAD logo" class="mad_logo" />
-      </div>
-    </section>
-    <p class="small">Developed by Group 09 | KEA MMD 2024</p>
-  </footer>
-  <!-- Link til .js -->
-  <script src="js/burgermenu.js"></script>
-</body>
-
+    </main>
+    <footer>
+      <section class="footer">
+        <div class="footer_col_vildmad">
+          <p>Vild Mad <br />Guldbergsgade 29 N, 2200 Kbh N <br />kontakt@vild-mad.dk</p>
+          <img src="img/logo_long.svg" alt="logo" class="footer_logo" />
+        </div>
+        <div class="social_flex">
+          <p>Follow us on social media</p>
+          <div class="social_icon_flex">
+            <a href="https://www.instagram.com/">
+              <img src="img/instagram.svg" alt="Instagram Logo" class="icon_social" />
+            </a>
+            <a href="https://www.facebook.com/">
+              <img src="img/facebook.svg" alt="Facebook Logo" class="icon_social" />
+            </a>
+          </div>
+        </div>
+        <div class="footer_col_mad">
+          <p>A project initiated by</p>
+          <img src="img/mad.png" alt="MAD logo" class="mad_logo" />
+        </div>
+      </section>
+      <p class="small">Developed by Group 09 | KEA MMD 2024</p>
+    </footer>
+    <!-- Link til .js -->
+    <script src="js/burgermenu.js"></script>
+  </body>
 </html>
