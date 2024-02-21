@@ -80,6 +80,7 @@
 .slide {
   width: 100%;
   border-radius: 0px;
+  filter: brightness(70%);
 }
 
 /* Style of arrows */

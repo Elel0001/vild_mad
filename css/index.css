@@ -2,6 +2,12 @@
   filter: brightness(70%);
 }
 
+.mand,
+.gren_7,
+.gren_3 {
+  display: none;
+}
+
 /*************** FORAGE *******************/
 .foraging {
   display: flex;

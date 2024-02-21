@@ -84,6 +84,7 @@ img {
 
 .img_hero {
   border-radius: 0;
+  filter: brightness(70%);
 }
 
 /***********************************  LINKS + BUTTONS  ***********************************/
