@@ -58,6 +58,7 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: var(--gap_l);
 }
 
 @media (min-width: 800px) {
