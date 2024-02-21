@@ -107,6 +107,7 @@ html {
 
 .slide {
   width: 100%;
+  border-radius: 0px;
 }
 
 /* Style of arrows */
@@ -123,7 +124,7 @@ html {
 
 .arrow:hover {
   cursor: pointer;
-  background-color: var(--transparent-grey);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 #next {
@@ -167,23 +168,16 @@ html {
   transform: translate(-50%, -50%);
   width: 300px;
   height: 170px;
-  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
 }
 
 .text-box {
-  padding: 10px;
-  margin: 0;
-}
-
-.text-box h2 {
-  margin: 0;
-  padding-bottom: 5px;
-}
-
-.text-box p {
-  margin: 0;
-  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_s);
+  padding: var(--gap_m);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: var(--radius);
 }
 
 @media (min-width: 800px) {
