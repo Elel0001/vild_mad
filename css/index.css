@@ -170,6 +170,7 @@ input[type="checkbox"]:checked::before {
 
   /**************** ilustrationer ****************/
   .mand {
+    display: block;
     position: absolute;
     top: 43%;
     left: 78%;
@@ -177,6 +178,7 @@ input[type="checkbox"]:checked::before {
   }
 
   .gren_7 {
+    display: block;
     position: absolute;
     top: 45%;
     left: 0%;
@@ -184,6 +186,7 @@ input[type="checkbox"]:checked::before {
   }
 
   .gren_3 {
+    display: block;
     position: absolute;
     top: -2%;
     left: 72%;
