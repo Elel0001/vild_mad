@@ -4,11 +4,17 @@ window.addEventListener("DOMContentLoaded", init);
 
 //eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhobXBpenRmc3NmYWx1d2V6aGdxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDgyNzA4NTUsImV4cCI6MjAyMzg0Njg1NX0.TqriEz5DkZTixJO6AhMtVsvt7xiSjMvpJm525z2c9jM
 
+const URLparams = new URLSearchParams(window.location.search);
+const id = URLparams.get("id");
+const ingredientsURL = `https://hhmpiztfssfaluwezhgq.supabase.co/rest/v1/vild_mad?id=eq.${id}&select=*`;
+
+//hhmpiztfssfaluwezhgq.supabase.co/rest/v1/vild_mad?id=eq.15&select=*
+
 function init() {
   console.log("init");
 
   //Henter dataen med fetch
-  fetch("https://hhmpiztfssfaluwezhgq.supabase.co/rest/v1/vild_mad?id=eq.15&select=*", {
+  fetch(ingredientsURL, {
     method: "GET",
     headers: {
       apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhobXBpenRmc3NmYWx1d2V6aGdxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDgyNzA4NTUsImV4cCI6MjAyMzg0Njg1NX0.TqriEz5DkZTixJO6AhMtVsvt7xiSjMvpJm525z2c9jM",
@@ -20,7 +26,7 @@ function init() {
 
 function showIngredient(ingredient) {
   console.log(ingredient);
-  //Jeg er obs på at når jeg bruger consol log, kan jeg se at jeg får et array med et objekt i. Derfor skal jeg ind og vælge det 1. (0) objekt i arrayet, få at få det jeg ønsker frem
+  //Jeg er obs på at når jeg bruger consol log, kan jeg se at jeg får et array med et objekt i. Derfor skal jeg ind og vælge det 1. objekt, altså [0], i arrayet, få at få det data jeg ønsker frem
 
   //Indsætter mit indhold fra mit objekt i html'en
   document.querySelector(".ingredient_type").textContent = ingredient[0].type;

@@ -33,12 +33,19 @@ function showIngredients(ingredientJSON) {
 
   let ingredientClone;
 
+  //For hvert element i datasættet laver jeg en kopi og indsætter indhold heri fra mit datasæt
   ingredientJSON.forEach((ingredient) => {
     //console.log("ingredient", ingredient);
 
+    //Kloner template
     ingredientClone = ingredientTemplate.cloneNode(true).content;
+
+    //Indsætter indhold fra database i klon
     ingredientClone.querySelector(".ingredient_name").textContent = ingredient.name;
     //ingredientClone.querySelector(".ingredient_image").src = ingredient.profile_image;
+
+    //Ændre href, så der linkes til den datasæt der er klikket på
+    ingredientClone.querySelector(".ingredient_link").href = `singleview.html?id=${ingredient.id}`;
 
     ingredientContainer.appendChild(ingredientClone);
   });
