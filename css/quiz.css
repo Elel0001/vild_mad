@@ -41,6 +41,7 @@ section h2 {
   margin-bottom: 15px;
   padding: 0rem 2rem;
   gap: 20px;
+  font-family: var(--font_body);
 }
 
 input[type="checkbox"] {
