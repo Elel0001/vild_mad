@@ -42,7 +42,7 @@ function showIngredients(ingredientJSON) {
 
     //Indsætter indhold fra database i klon
     ingredientClone.querySelector(".ingredient_name").textContent = ingredient.name;
-    //ingredientClone.querySelector(".ingredient_image").src = ingredient.profile_image;
+    ingredientClone.querySelector(".ingredient_image").src = `img/${ingredient.profile_image}`;
 
     //Ændre href, så der linkes til den datasæt der er klikket på
     ingredientClone.querySelector(".ingredient_link").href = `singleview.html?id=${ingredient.id}`;

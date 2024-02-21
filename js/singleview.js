@@ -32,8 +32,9 @@ function showIngredient(ingredient) {
   document.querySelector(".ingredient_type").textContent = ingredient[0].type;
   document.querySelector(".ingredient_name").textContent = ingredient[0].name;
   document.querySelector(".ingrdient_desc").textContent = ingredient[0].description;
-  //document.querySelector(".ingredient_surrounding").src = ingredient[0].background_image;
-  //document.querySelector(".ingredient_image").src = ingredient[0].profile_image;
+  document.querySelector(".ingredient_surrounding").src = `img/${ingredient[0].background_image}`;
+  document.querySelector(".ingredient_image").src = `img/${ingredient[0].profile_image}`;
+
   document.querySelector(".ingrdient_place").textContent = ingredient[0].where;
   document.querySelector(".ingrdient_months").textContent = ingredient[0].when;
   document.querySelector(".ingredient_pick_desc").textContent = ingredient[0].pick;
