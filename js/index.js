@@ -1,9 +1,5 @@
 window.addEventListener("DOMContentLoaded", init);
 
-// https://hhmpiztfssfaluwezhgq.supabase.co
-
-//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhobXBpenRmc3NmYWx1d2V6aGdxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDgyNzA4NTUsImV4cCI6MjAyMzg0Njg1NX0.TqriEz5DkZTixJO6AhMtVsvt7xiSjMvpJm525z2c9jM
-
 let ingredientTemplate;
 let ingredientContainer;
 
