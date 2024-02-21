@@ -272,6 +272,6 @@ html {
   }
 
   .text-box {
-    padding: var(--gap_s);
+    padding: var(--gap_m);
   }
 }

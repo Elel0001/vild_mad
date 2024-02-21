@@ -112,6 +112,44 @@ a:hover {
   width: fit-content;
 }
 
+.button:hover {
+  transform: scale(1.05);
+}
+
+/***********************************  LISTEPUNKTER  ***********************************/
+
+/* Nedenstående er lånt herfra https://codepen.io/toianw/pen/YqEqrz */
+
+li {
+  list-style-type: none;
+}
+
+li > a {
+  display: inline-block;
+  position: relative;
+}
+
+li > a::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0;
+  top: 5px;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+li > a:hover::after,
+li > a.active-nav::after {
+  width: 100%;
+  background: var(--green_3);
+}
+
+.active {
+  font-weight: 800;
+  color: var(--white);
+}
 /***********************************  ELEMENTER  ***********************************/
 .hero {
   position: relative;
