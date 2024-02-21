@@ -83,45 +83,11 @@
           some wonderful delights!</p>
       </div>
       <div class="flex_col order">
-        <div class="list">
-          <article class="ingredient_article">
-            <img class="ingredient_image" src="img/VILDMAD_RV_Ramslog_02.jpg" alt="Image of ingredient" />
-            <h4 class="ingredient_name">Name 01</h4>
+        <div class="ingredient_container"></div>
+        <div class="center">
 
-            <a class="ingredient_link" href="singleview.html"></a>
-          </article>
-          <article class="ingredient_article">
-            <img class="ingredient_image" src="img/VILDMAD_RV_Ramslog_02.jpg" alt="Image of ingredient" />
-            <h4 class="ingredient_name">Name 02</h4>
-
-            <a class="ingredient_link" href="singleview.html"></a>
-          </article>
-          <article class="ingredient_article">
-            <img class="ingredient_image" src="img/VILDMAD_RV_Ramslog_02.jpg" alt="Image of ingredient" />
-            <h4 class="ingredient_name">Name 03</h4>
-
-            <a class="ingredient_link" href="singleview.html"></a>
-          </article>
-          <article class="ingredient_article">
-            <img class="ingredient_image" src="img/VILDMAD_RV_Ramslog_02.jpg" alt="Image of ingredient" />
-            <h4 class="ingredient_name">Name 04</h4>
-
-            <a class="ingredient_link" href="singleview.html"></a>
-          </article>
-          <article class="ingredient_article">
-            <img class="ingredient_image" src="img/VILDMAD_RV_Ramslog_02.jpg" alt="Image of ingredient" />
-            <h4 class="ingredient_name">Name 05</h4>
-
-            <a class="ingredient_link" href="singleview.html"></a>
-          </article>
-          <article class="ingredient_article">
-            <img class="ingredient_image" src="img/VILDMAD_RV_Ramslog_02.jpg" alt="Image of ingredient" />
-            <h4 class="ingredient_name">Name 06</h4>
-
-            <a class="ingredient_link" href="singleview.html"></a>
-          </article>
+          <a href="listview.html" class="button">View more ingredients</a>
         </div>
-        <a href="listview.html" class="button">View more ingredients</a>
       </div>
     </section>
 
@@ -176,8 +142,20 @@
     </section>
     <p class="small">Developed by Gr. 09 | KEA MMD 2024</p>
   </footer>
+
+  <!-- Templates -->
+  <template class="ingredient_template">
+    <article class="ingredient_article">
+      <img class="ingredient_image" src="img/VILDMAD_RV_Ramslog_02.jpg" alt="Image of ingredient" />
+      <h4 class="ingredient_name">Name</h4>
+
+      <a class="ingredient_link" href="singleview.html"></a>
+    </article>
+  </template>
+
   <!-- Link til .js -->
   <script src="js/burgermenu.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

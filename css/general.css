@@ -104,7 +104,9 @@ a:hover {
   color: var(--green_1);
 }
 
+button,
 .button {
+  font-size: 1rem;
   background-color: var(--green_3);
   border-radius: var(--radius_button);
   padding: 1rem 2rem;
@@ -112,6 +114,7 @@ a:hover {
   width: fit-content;
 }
 
+button:hover,
 .button:hover {
   transform: scale(1.05);
 }

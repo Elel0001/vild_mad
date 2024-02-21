@@ -1,22 +1,3 @@
-html {
-  --font_display: "Grandstander", sans-serif;
-  --font_body: "Lato", sans-serif;
-
-  --gap_s: 1rem;
-  --gap_m: 2rem;
-  --gap_l: 4rem;
-
-  --radius: 15px;
-  --radius_button: 30px;
-
-  --black: #1b1b1b;
-  --white: #ffffff;
-  --green_1: #e9f1df;
-  --green_2: #b8d593;
-  --green_3: #688840;
-  --green_4: #254900;
-}
-
 main {
   background-color: var(--green_1);
 }
