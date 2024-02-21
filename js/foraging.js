@@ -1,3 +1,5 @@
+//https://codepen.io/sophgdn/pen/pxPmgr
+
 var index = 0;
 var locations = ["Spring", "Summer", "Autumn", "Winter"];
 
