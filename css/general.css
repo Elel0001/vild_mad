@@ -136,9 +136,10 @@ header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.logo img {
-  width: 50px;
-  height: 50px;
+.logo {
+  height: 40px;
+  width: auto;
+  border-radius: 0px;
 }
 
 nav {
@@ -246,6 +247,23 @@ nav {
 /******************************************************************************************************************************/
 /**********************************************************  DESKTOP  *********************************************************/
 @media (min-width: 800px) {
+  /*  HEADER  */
+  header {
+    position: relative;
+    justify-content: end;
+    overflow: visible;
+  }
+
+  .header_link {
+    position: absolute;
+    top: var(--gap_m);
+    left: 15%;
+    z-index: 2;
+  }
+
+  .logo {
+    height: 100px;
+  }
   /* TEXT */
   h1 {
     font-size: 5rem;
