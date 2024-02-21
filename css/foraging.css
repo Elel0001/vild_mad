@@ -19,12 +19,12 @@ html {
   --green_4: #254900;
 }
 
-.img_hero {
+/*.img_hero {
   width: 100%;
   height: 150px;
-  object-fit: cover; /* Beskær billedet til at passe uden at strække det */
-  object-position: center; /* Juster beskæringspositionen efter behov */
-}
+  object-fit: cover; 
+  object-position: center; 
+}*/
 
 .foraging_grid {
   margin: var(--gap_m) 10%;
@@ -185,9 +185,9 @@ html {
 }
 
 @media (min-width: 800px) {
-  .img_hero {
+  /*.img_hero {
     height: 300px;
-  }
+  }*/
 
   .foraging_grid {
     display: grid;
