@@ -1,140 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
 
     <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
 
     <title>Ingredient</title>
 
     <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/singleview.css">
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/singleview.css" />
 
     <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div>
-            <a href="index.html"><img src="#" alt="Logo" class="logo"></a>
+      <div>
+        <a href="index.html"><img src="#" alt="Logo" class="logo" /></a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="foraging.html" class="a_mur a_aske">Foraging</a></li>
+          <li><a href="listview.html" class="a_nat a_aske">Ingredients</a></li>
+          <li><a href="map.html" class="a_sol a_aske">Map</a></li>
+          <li><a href="quiz.html" class="a_blom a_aske">Quiz</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="foraging.html" class="a_mur a_aske">Foraging</a></li>
-                <li><a href="listview.html" class="a_nat a_aske">Ingredients</a></li>
-                <li><a href="map.html" class="a_sol a_aske">Map</a></li>
-                <li><a href="quiz.html" class="a_blom a_aske">Quiz</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </nav>
+      </nav>
     </header>
     <main>
-        <!-- Breadcrumb -->
-        <section class="ingredient">
-            <div class="ingredient_basics">
-                <div class="ingredient_basic_text">
-                    <p class="ingredient_type">Type</p>
-                    <h1 class="ingredient_name">Name</h1>
-                    <div class="ingredient_text">
-                        <h4 class="ingredient_h4">Description</h4>
-                        <p class="ingrdient_desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit
-                            temporibus optio reprehenderit recusandae iure omnis
-                            eveniet quibusdam.</p>
-                    </div>
-                </div>
-                <div class="ingredient_images order">
-                    <img class="ingredient_surrounding" src="img/VILDMAD_RV_Ramslog_07.jpg"
-                        alt="Image of ingredient in nature">
-                    <img class="ingredient_image" src="img/VILDMAD_RV_Ramslog_02.jpg" alt="Image of ingredient">
-                </div>
+      <!-- Breadcrumb -->
+      <section class="ingredient">
+        <div class="ingredient_basics">
+          <div class="ingredient_basic_text">
+            <p class="ingredient_type">Type</p>
+            <h1 class="ingredient_name">Name</h1>
+            <div class="ingredient_text">
+              <h4 class="ingredient_h4">Description</h4>
+              <p class="ingrdient_desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit temporibus optio reprehenderit recusandae iure omnis eveniet quibusdam.</p>
             </div>
-            <div class="ingredient_info">
-                <div class="ingrdient_where_when">
-                    <div class="ingredient_info_1">
-                        <img class="ingrdient_icon" src="img/cirkel.svg" alt="Icon">
-                        <div class="ingredient_text">
-                            <h4 class="ingredient_h4">Where to find</h4>
-                            <p class="ingrdient_place">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit
-                                temporibus optio reprehenderit recusandae iure omnis eveniet quibusdam.</p>
-                        </div>
-                    </div>
-                    <div class="ingredient_info_1">
-                        <img class="ingrdient_icon" src="img/cirkel.svg" alt="Icon">
-                        <div class="ingredient_text">
-                            <h4 class="ingredient_h4">When to pick</h4>
-                            <p class="ingrdient_months">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit
-                                temporibus optio reprehenderit recusandae iure omnis
-                                eveniet quibusdam.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="ingredient_pick">
-                    <h3 class="ingredient_h3">Pick me</h3>
-                    <p class="ingredient_pick_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quia,
-                        libero commodi quod magni alias veniam explicabo itaque beatae sed ratione ab officiis neque
-                        omnis natus doloribus quam dolorem quidem!</p>
-                    <div class="ingredient_info_2">
-                        <img class="ingrdient_icon" src="img/cirkel.svg" alt="Icon">
-                        <p class="ingrdient_obs">April, May, June</p>
-                    </div>
-                    <img class="ingredient_pick_illu" src="#" alt="Illustration">
-                </div>
+          </div>
+          <div class="ingredient_images order">
+            <img class="ingredient_surrounding" src="img/VILDMAD_RV_Ramslog_07.jpg" alt="Image of ingredient in nature" />
+            <img class="ingredient_image" src="img/VILDMAD_RV_Ramslog_02.jpg" alt="Image of ingredient" />
+          </div>
+        </div>
+        <div class="ingredient_info">
+          <div class="ingrdient_where_when">
+            <div class="ingredient_info_1">
+              <img class="ingrdient_icon" src="img/cirkel.svg" alt="Icon" />
+              <div class="ingredient_text">
+                <h4 class="ingredient_h4">Where to find</h4>
+                <p class="ingrdient_place">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit temporibus optio reprehenderit recusandae iure omnis eveniet quibusdam.</p>
+              </div>
             </div>
-
-
-        </section>
-        <section class="recipes">
-            <div class="center">
-                <h2>Recipe with <span class="recipe_name">Name</span></h2>
+            <div class="ingredient_info_1">
+              <img class="ingrdient_icon" src="img/cirkel.svg" alt="Icon" />
+              <div class="ingredient_text">
+                <h4 class="ingredient_h4">When to pick</h4>
+                <p class="ingrdient_months">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit temporibus optio reprehenderit recusandae iure omnis eveniet quibusdam.</p>
+              </div>
             </div>
-            <div class="recipe_container">
-                <article class="recipe">
-                    <img src="img/Opskrift_12_02_Ramslog_V01-squashed.jpg" alt="Image of recipe" class="recipe_image">
-                    <h4 class="recipe_name">Recipe Name 01</h4>
-                    <a href="#" class="recipe_link"></a>
-                </article>
-                <article class="recipe">
-                    <img src="img/Opskrift_12_02_Ramslog_V01-squashed.jpg" alt="Image of recipe" class="recipe_image">
-                    <h4 class="recipe_name">Recipe Name 02</h4>
-                    <a href="#" class="recipe_link"></a>
-                </article>
-                <article class="recipe">
-                    <img src="img/Opskrift_12_02_Ramslog_V01-squashed.jpg" alt="Image of recipe" class="recipe_image">
-                    <h4 class="recipe_name">Recipe Name 03</h4>
-                    <a href="#" class="recipe_link"></a>
-                </article>
+          </div>
+          <div class="ingredient_pick">
+            <h3 class="ingredient_h3">Pick me</h3>
+            <p class="ingredient_pick_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quia, libero commodi quod magni alias veniam explicabo itaque beatae sed ratione ab officiis neque omnis natus doloribus quam dolorem quidem!</p>
+            <div class="ingredient_info_2">
+              <img class="ingrdient_icon" src="img/cirkel.svg" alt="Icon" />
+              <p class="ingrdient_obs">April, May, June</p>
             </div>
-
-        </section>
-
-
+            <img class="ingredient_pick_illu" src="#" alt="Illustration" />
+          </div>
+        </div>
+      </section>
+      <section class="recipes">
+        <div class="center">
+          <h2>Recipe with <span class="recipe_name">Name</span></h2>
+        </div>
+        <div class="recipe_container">
+          <article class="recipe">
+            <img src="img/Opskrift_12_02_Ramslog_V01-squashed.jpg" alt="Image of recipe" class="recipe_image" />
+            <h4 class="recipe_name">Recipe Name 01</h4>
+            <a href="#" class="recipe_link"></a>
+          </article>
+          <article class="recipe">
+            <img src="img/Opskrift_12_02_Ramslog_V01-squashed.jpg" alt="Image of recipe" class="recipe_image" />
+            <h4 class="recipe_name">Recipe Name 02</h4>
+            <a href="#" class="recipe_link"></a>
+          </article>
+          <article class="recipe">
+            <img src="img/Opskrift_12_02_Ramslog_V01-squashed.jpg" alt="Image of recipe" class="recipe_image" />
+            <h4 class="recipe_name">Recipe Name 03</h4>
+            <a href="#" class="recipe_link"></a>
+          </article>
+        </div>
+      </section>
     </main>
     <footer></footer>
 
     <!-- Templates -->
-    <template>
-
-    </template>
+    <template> </template>
     <!-- Link til .js -->
     <script src="js/burgermenu.js"></script>
     <script src="js/singleview.js"></script>
-</body>
-
+  </body>
 </html>
