@@ -15,7 +15,7 @@ html {
   --white: #ffffff;
   --green_1: #e9f1df;
   --green_2: #b8d593;
-  --green_3: #688840;
+  --green_3: #61803c;
   --green_4: #254900;
 }
 
@@ -85,6 +85,21 @@ img {
 .img_hero {
   border-radius: 0;
   filter: brightness(70%);
+}
+
+/***********************************  Icons  ***********************************/
+
+.ingrdient_icon {
+  width: 30px;
+  height: auto;
+}
+
+.ingredient_info_1,
+.ingredient_info_2 {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap_s);
+  align-items: flex-start;
 }
 
 /***********************************  LINKS + BUTTONS  ***********************************/

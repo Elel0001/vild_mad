@@ -68,7 +68,7 @@ button {
 /***************** grøn cirkel ********************/
 
 .foraging_green_cirkle {
-  padding-top: 10px;
+  padding-top: var(--gap_m);
   padding-bottom: 20px;
 }
 
