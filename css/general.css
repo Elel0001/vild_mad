@@ -65,6 +65,13 @@ h4 {
   color: var(--black);
 }
 
+.ingredient_name {
+  font-family: var(--font_body);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
 p {
   font-family: var(--font_body);
   font-size: 0.8rem;
