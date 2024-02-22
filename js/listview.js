@@ -1,19 +1,12 @@
 //Loader siden og går til init
 window.addEventListener("DOMContentLoaded", init);
 
-//Laver to variabler
-let ingredientTemplate;
-let ingredientContainer;
+//Definere to variabler
+let ingredientTemplate = document.querySelector(".ingredient_template");
+let ingredientContainer = document.querySelector(".ingredient_container");
 
 function init() {
   console.log("init");
-
-  //Definere værdier for variabler
-  ingredientTemplate = document.querySelector(".ingredient_template");
-  console.log("ingredientTemplate", ingredientTemplate);
-
-  ingredientContainer = document.querySelector(".ingredient_container");
-  console.log("ingredientContainer", ingredientContainer);
 
   //Henter dataen med fetch
   fetch("https://hhmpiztfssfaluwezhgq.supabase.co/rest/v1/vild_mad?select=id,name,profile_image&order=name.asc", {
@@ -32,7 +25,7 @@ function showIngredients(ingredientJSON) {
 
   let ingredientClone;
 
-  //For hvert element i datasættet laver jeg en kopi og indsætter indhold heri fra mit datasæt
+  //For hvert element i datasættet laver jeg en kopi/klon og indsætter indhold heri fra mit datasæt
   ingredientJSON.forEach((ingredient) => {
     //console.log("ingredient", ingredient);
 
@@ -46,7 +39,7 @@ function showIngredients(ingredientJSON) {
     //Ændre href, så der linkes til den datasæt der er klikket på
     ingredientClone.querySelector(".ingredient_link").href = `singleview.html?id=${ingredient.id}`;
 
-    //Append
+    //Append'er så klonerne ender i den container vi har defineret
     ingredientContainer.appendChild(ingredientClone);
   });
 }

@@ -39,4 +39,5 @@ function showIngredient(ingredient) {
   document.querySelector(".ingrdient_months").textContent = ingredient[0].when;
   document.querySelector(".ingredient_pick_desc").textContent = ingredient[0].pick;
   document.querySelector(".ingrdient_obs").textContent = ingredient[0].obs;
+  document.querySelector(".recipe_name").textContent = ingredient[0].name;
 }
