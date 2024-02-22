@@ -1,135 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="informationsite about the deciduous forest" />
+    <meta name="author" content="MMD studerende gr.09" />
+    <!-- <meta name="robots" content="noindex" /> -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="informationsite about the deciduous forest">
-  <meta name="author" content="MMD studerende gr.09">
-  <!-- <meta name="robots" content="noindex" /> -->
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
 
-  <!-- FAVICON -->
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-  <link rel="manifest" href="site.webmanifest" />
+    <title>Quiz</title>
 
-  <title>Quiz</title>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/quiz.css" />
 
-  <!-- STYLESHEETS -->
-  <link rel="stylesheet" href="css/general.css" />
-  <link rel="stylesheet" href="css/quiz.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+  </head>
 
-  <!-- GOOGLE FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-    rel="stylesheet" />
-</head>
-
-<body>
-  <header>
-    <a href="index.html" class="header_link">
-      <picture>
-        <source media="(min-width:800px)" srcset="img/logo_main.svg" class="logo">
-        <img src="img/logo_long.svg" alt="logo" style="width:auto;" class="logo">
-      </picture>
-    </a>
-    <nav>
-      <ul class="menu">
-        <li><a href="foraging.html">Foraging</a></li>
-        <li><a href="listview.html">Ingredients</a></li>
-        <li><a href="map.html">Map</a></li>
-        <li><a href="quiz.html" class="active">Quiz</a></li>
-      </ul>
-      <div class="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <div class="green_background">
-        <h1>The Learning Duel of the</h1>
-        <h1>Deciduous Forest</h1>
-        <h2>Who will be the ultimate champion?</h2>
-      </div>
-    </section>
-    <div class="quiz">
-      <form name="contact" netlify>
-        <div class="quiz_grid">
-          <div>
-            <h3>Question 1</h3>
-            <p class="green_tekstboks">Which of the following trees are not commenly found in the deciduous forest?</p>
-            <label> <input type="checkbox" name="tree[]" id="pine" /> Pine </label>
-            <label> <input type="checkbox" name="tree[]" id="oak" /> Oak </label>
-            <label> <input type="checkbox" name="tree[]" id="ash" /> Ash </label>
+  <body>
+    <header>
+      <a href="index.html" class="header_link">
+        <picture>
+          <source media="(min-width:800px)" srcset="img/logo_main.svg" class="logo" />
+          <img src="img/logo_long.svg" alt="logo" style="width: auto" class="logo" />
+        </picture>
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="foraging.html">Foraging</a></li>
+          <li><a href="listview.html">Ingredients</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a href="quiz.html" class="active">Quiz</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="green_background">
+          <h1>The Learning Duel of the</h1>
+          <h1>Deciduous Forest</h1>
+          <h2>Who will be the ultimate champion?</h2>
+        </div>
+      </section>
+      <div class="quiz">
+        <form name="contact" netlify>
+          <div class="quiz_grid">
+            <div>
+              <h3>Question 1</h3>
+              <p class="green_tekstboks">Which of the following trees are not commenly found in the deciduous forest?</p>
+              <label> <input type="checkbox" name="tree[]" id="pine" /> Pine </label>
+              <label> <input type="checkbox" name="tree[]" id="oak" /> Oak </label>
+              <label> <input type="checkbox" name="tree[]" id="ash" /> Ash </label>
+            </div>
+            <div><img src="img/question_1.webp" alt="tree" /></div>
+            <!--Credit: Photo by Dominik Van Opdenbosch on Unsplash-->
           </div>
-          <div><img src="img/VILDMAD_RV_Ramslog_07.jpg" alt="test" /></div>
-        </div>
-        <div class="quiz_grid">
-          <div>
-            <h3>Question 2</h3>
-            <p class="green_tekstboks">Which season is the least productive for foraging in the deciduous forest?</p>
-            <label> <input type="checkbox" name="season[]" id="spring" /> Spring </label>
-            <label> <input type="checkbox" name="season[]" id="summer" /> Summer </label>
-            <label> <input type="checkbox" name="season[]" id="fall" /> Fall </label>
+          <div class="quiz_grid">
+            <div>
+              <h3>Question 2</h3>
+              <p class="green_tekstboks">Which season is the least productive for foraging in the deciduous forest?</p>
+              <label> <input type="checkbox" name="season[]" id="spring" /> Spring </label>
+              <label> <input type="checkbox" name="season[]" id="summer" /> Summer </label>
+              <label> <input type="checkbox" name="season[]" id="fall" /> Fall </label>
+            </div>
+            <div><img src="img/question_2.webp" alt="trees" /></div>
+            <!--Credit: Photo by Miha Rekar on Unsplash-->
           </div>
-          <div><img src="img/VILDMAD_RV_Ramslog_07.jpg" alt="test" /></div>
-        </div>
-        <div class="quiz_grid">
-          <div>
-            <h3>Question 3</h3>
-            <p class="green_tekstboks">How many percentage of Denmark's forest area is pure deciduous forest?</p>
-            <label> <input type="checkbox" name="percentage[]" id="24" /> 24% </label>
-            <label> <input type="checkbox" name="percentage[]" id="34" /> 34% </label>
-            <label> <input type="checkbox" name="percentage[]" id="44" /> 44% </label>
+          <div class="quiz_grid">
+            <div>
+              <h3>Question 3</h3>
+              <p class="green_tekstboks">How many percentage of Denmark's forest area is pure deciduous forest?</p>
+              <label> <input type="checkbox" name="percentage[]" id="24" /> 24% </label>
+              <label> <input type="checkbox" name="percentage[]" id="34" /> 34% </label>
+              <label> <input type="checkbox" name="percentage[]" id="44" /> 44% </label>
+            </div>
+            <div><img src="img/question_3.webp" alt="tree tops" /></div>
+            <!--Credit: Photo by Tuyen Nguyen on Unsplash-->
           </div>
-          <div><img src="img/VILDMAD_RV_Ramslog_07.jpg" alt="test" /></div>
-        </div>
-        <div class="quiz_grid">
-          <div>
-            <h3>Question 4</h3>
-            <p class="green_tekstboks">When is your best chance to find mushrooms in the forest after a rain shower?</p>
-            <label> <input type="checkbox" name="mushrooms[]" id="1" /> 1 day after rain </label>
-            <label> <input type="checkbox" name="mushrooms[]" id="4" /> 4 days after rain </label>
-            <label> <input type="checkbox" name="mushrooms[]" id="7" /> 7 days after rain </label>
+          <div class="quiz_grid">
+            <div>
+              <h3>Question 4</h3>
+              <p class="green_tekstboks">When is your best chance to find mushrooms in the forest after a rain shower?</p>
+              <label> <input type="checkbox" name="mushrooms[]" id="1" /> 1 day after rain </label>
+              <label> <input type="checkbox" name="mushrooms[]" id="4" /> 4 days after rain </label>
+              <label> <input type="checkbox" name="mushrooms[]" id="7" /> 7 days after rain </label>
+            </div>
+            <div><img src="img/question_4.webp" alt="mushrooms" /></div>
+            <!--Credit: Photo by iggii on Unsplash-->
           </div>
-          <div><img src="img/VILDMAD_RV_Ramslog_07.jpg" alt="test" /></div>
+          <button type="submit" id="submit" value="View results">Send results</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <section class="footer">
+        <div class="footer_col_vildmad">
+          <p>Vild Mad <br />Guldbergsgade 29 N, 2200 Kbh N <br />kontakt@vild-mad.dk</p>
+          <img src="img/logo_long.svg" alt="logo" class="footer_logo" />
         </div>
-        <button type="submit" id="submit" value="View results">Send results</button>
-      </form>
-    </div>
-  </main>
-  <footer>
-    <section class="footer">
-      <div class="footer_col_vildmad">
-        <p>Vild Mad <br />Guldbergsgade 29 N, 2200 Kbh N <br />kontakt@vild-mad.dk</p>
-        <img src="img/logo_long.svg" alt="logo" class="footer_logo" />
-      </div>
-      <div class="social_flex">
-        <p>Follow us on social media</p>
-        <div class="social_icon_flex">
-          <a href="https://www.instagram.com/">
-            <img src="img/instagram.svg" alt="Instagram Logo" class="icon_social" />
-          </a>
-          <a href="https://www.facebook.com/">
-            <img src="img/facebook.svg" alt="Facebook Logo" class="icon_social" />
-          </a>
+        <div class="social_flex">
+          <p>Follow us on social media</p>
+          <div class="social_icon_flex">
+            <a href="https://www.instagram.com/">
+              <img src="img/instagram.svg" alt="Instagram Logo" class="icon_social" />
+            </a>
+            <a href="https://www.facebook.com/">
+              <img src="img/facebook.svg" alt="Facebook Logo" class="icon_social" />
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="footer_col_mad">
-        <p>A project initiated by</p>
-        <img src="img/mad.png" alt="MAD logo" class="mad_logo" />
-      </div>
-    </section>
-    <p class="small">Developed by Group 09 | KEA MMD 2024</p>
-  </footer>
-  <!-- Link til .js -->
-  <script src="js/burgermenu.js"></script>
-</body>
-
+        <div class="footer_col_mad">
+          <p>A project initiated by</p>
+          <img src="img/mad.png" alt="MAD logo" class="mad_logo" />
+        </div>
+      </section>
+      <p class="small">Developed by Group 09 | KEA MMD 2024</p>
+    </footer>
+    <!-- Link til .js -->
+    <script src="js/burgermenu.js"></script>
+  </body>
 </html>
