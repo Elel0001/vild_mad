@@ -11,10 +11,10 @@ function init() {
   ingredientContainer = document.querySelector(".ingredient_container");
 
   //Henter data fra Subabase API med fetch og apikey
-  fetch("https://hhmpiztfssfaluwezhgq.supabase.co/rest/v1/vild_mad?select=id,name,profile_image&limit=6", {
+  fetch("https://tffrhcejgcmxtpatvfvj.supabase.co/rest/v1/vildmad?select=id,name,profile_image&limit=6", {
     method: "GET",
     headers: {
-      apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhobXBpenRmc3NmYWx1d2V6aGdxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDgyNzA4NTUsImV4cCI6MjAyMzg0Njg1NX0.TqriEz5DkZTixJO6AhMtVsvt7xiSjMvpJm525z2c9jM",
+      apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRmZnJoY2VqZ2NteHRwYXR2ZnZqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjgwNjg3NTEsImV4cCI6MjA0MzY0NDc1MX0.csHqTIOIfSUbv7ApQFyGHfzQ6QhJ9eAU86rmT1cL9HI",
     },
   })
     .then((res) => res.json())

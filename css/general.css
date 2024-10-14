@@ -66,9 +66,8 @@ h4 {
 }
 
 .ingredient_name {
-  font-family: var(--font_body);
-  font-size: 1.15rem;
-  font-weight: 400;
+  font-family: var(--font_display);
+  font-weight: 700;
   color: var(--black);
 }
 

@@ -7,7 +7,7 @@ const URLparams = new URLSearchParams(window.location.search);
 const id = URLparams.get("id");
 
 //Indsætter med konkatenering det nu fundet id, i URL'en til API'et, så det data jeg har klikket på i listview, bliver vist i dette singleview
-const ingredientsURL = `https://hhmpiztfssfaluwezhgq.supabase.co/rest/v1/vild_mad?id=eq.${id}&select=*`;
+const ingredientsURL = `https://tffrhcejgcmxtpatvfvj.supabase.co/rest/v1/vildmad?id=eq.${id}&select=*`;
 
 function init() {
   console.log("init");
@@ -16,7 +16,7 @@ function init() {
   fetch(ingredientsURL, {
     method: "GET",
     headers: {
-      apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhobXBpenRmc3NmYWx1d2V6aGdxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDgyNzA4NTUsImV4cCI6MjAyMzg0Njg1NX0.TqriEz5DkZTixJO6AhMtVsvt7xiSjMvpJm525z2c9jM",
+      apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRmZnJoY2VqZ2NteHRwYXR2ZnZqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjgwNjg3NTEsImV4cCI6MjA0MzY0NDc1MX0.csHqTIOIfSUbv7ApQFyGHfzQ6QhJ9eAU86rmT1cL9HI",
     },
   })
     .then((res) => res.json())
